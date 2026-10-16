@@ -36,3 +36,23 @@ app.patch('/user',(req,res)=>{
 
 
 
+/*==============   Request object property ==========*
+    1)  req.body
+    2)  req.parms
+    3)  req.queary 
+*/
+
+app.post('/person',(req,res)=>{
+    console.log(req.body)
+    res.send("send the information ")
+})
+
+app.get('/person/:id',(req,res)=>{
+    console.log(req.params)
+    res.send("this are send the parameter varibale ")
+})
+
+app.get('/person',(req,res)=>{
+    console.log(req.query)
+    res.send("this are send quary value ")
+})
