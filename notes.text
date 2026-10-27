@@ -1,0 +1,17 @@
+
+
+  mere ko frontend se data ko send karna hai ye data request mai rahega fir 
+
+postman mai ye post methods se data send hota hai fir mere backend devloper mere ko req.body se access karega 
+mere ayhi kaam hota hai requeat body methods ka 
+
+
+
+my first word the create  the server and 
+
+send the response and crud  opreation of the rest api 
+
+after crud opreation then mvc Archtechture are the 
+modal
+view--- view are the nothing but  this is a end ponit of url it means router 
+controler controler are the function and logic whare you write the function implementaion 

@@ -1,3 +1,5 @@
+
+
 const express=require("express") // import the express feature 
 
 const app=express() // this is create the sever 
@@ -8,6 +10,7 @@ app.use(express.json())
 
 app.get('/',(req,res)=>{
     res.send("this are send the response hello sunny ")
+    res.send("learn the express")
 })
 
 app.listen(PORT,()=>{
@@ -18,6 +21,7 @@ app.listen(PORT,()=>{
 /*
 
  ===============    CRUD  OPREATION OF REST API  ============== 
+
 */
 
 app.get('/user',(req,res)=>{
