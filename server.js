@@ -4,6 +4,9 @@
 const express = require("express");
 const app = express();
 
+const softwareRoutes=require('./Routes/tcs_employee.js')
+/* 
+
 const userRoutes=require('./Routes/best_user.js')
 const productRoutes=require('./Routes/SumsumgPRO.js')
 app.get('/', (req, res) => {
@@ -28,16 +31,16 @@ app.delete('/user', (req, res) => {
     res.send("this method is DELETE, removing content");
 });
 
-
-
-
-
-
  // flow the mvc architechture 
 
 app.use("/user_best",userRoutes)
 app.use("/Laptop_product",productRoutes)
 
+
+
+*/
+
+app.use("/TCS_Emp",softwareRoutes)
 app.listen(3001, () => {
     console.log("server created on port 3001");
 });
