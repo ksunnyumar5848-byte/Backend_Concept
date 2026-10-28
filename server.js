@@ -5,6 +5,8 @@ const express = require("express");
 const app = express();
 
 const softwareRoutes=require('./Routes/tcs_employee.js')
+
+const {connnect_to_database}=require('./config/db.js')
 /* 
 
 const userRoutes=require('./Routes/best_user.js')
@@ -40,10 +42,16 @@ app.use("/Laptop_product",productRoutes)
 
 */
 
+connnect_to_database()
+
+
 app.use("/TCS_Emp",softwareRoutes)
 app.listen(3001, () => {
-    console.log("server created on port 3001");
+    console.log("server are start the this post number ");
 });
+
+
+
 
 
  
