@@ -15,3 +15,11 @@ after crud opreation then mvc Archtechture are the
 modal
 view--- view are the nothing but  this is a end ponit of url it means router 
 controler controler are the function and logic whare you write the function implementaion 
+
+
+
+---  flow the mvc Archtechture --------
+
+import the mongoose 
+
+connect to the database 

@@ -7,6 +7,10 @@ const app = express();
 const softwareRoutes=require('./Routes/tcs_employee.js')
 
 const {connnect_to_database}=require('./config/db.js')
+
+const user=require('./model/userModel.js')
+
+
 /* 
 
 const userRoutes=require('./Routes/best_user.js')
@@ -44,11 +48,30 @@ app.use("/Laptop_product",productRoutes)
 
 connnect_to_database()
 
+app.use(express.urlencoded())
+
+app.post('/createuser',async (req,res)=>{
+
+    const formdata= req.body
+
+    userdata=await user.create({
+        name:formdata.name,
+        marks:formdata.marks,
+        age:formdata.age,
+        profission:formdata.profission,
+        salary:formdata.salary
+    })
+    res.send(userdata)
+     
+})
 
 app.use("/TCS_Emp",softwareRoutes)
 app.listen(3001, () => {
     console.log("server are start the this post number ");
 });
+
+
+
 
 
 
