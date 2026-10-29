@@ -99,6 +99,18 @@ app.post("/emp_Create",async (req,res)=>{
 
 
 
+app.get("/All-emp",async (req,res)=>{
+
+   const allperson= await employeeinfo.find()
+
+   console.log(allperson)
+
+   res.send(" hello bro all employee find successful .......!  ")
+   
+})
+
+
+
 
 
 
