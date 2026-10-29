@@ -12,3 +12,6 @@ const userSchema=mongoose.Schema({
 let userinfo=mongoose.model("user",userSchema)
 
 module.exports=userinfo
+
+
+

@@ -10,7 +10,7 @@ const {connnect_to_database}=require('./config/db.js')
 
 const user=require('./model/userModel.js')
 
-const {employeeinfo}=require('./model/employeemodel.js')
+const employeeinfo=require('./model/employeemodel.js')
 
 
 /* 
@@ -74,8 +74,28 @@ app.use("/TCS_Emp",softwareRoutes)
 
 // employee create in the database 
 
+  console.log(employeeinfo.name)
 
 
+app.post("/emp_Create",async (req,res)=>{
+
+      const userformdata= req.body
+      
+    console.log(userformdata)
+
+     await employeeinfo.create({
+        name:userformdata.name,
+        skills:userformdata.skills,
+        profission:userformdata.profission,
+        company:userformdata.company,
+        exprencess:userformdata.exprencess,
+        password:userformdata.password,
+        email:userformdata.email
+     })
+
+    res.send("emp create the successfully bro ... !  ")
+
+})
 
 
 
