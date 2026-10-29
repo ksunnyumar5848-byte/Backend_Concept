@@ -106,8 +106,10 @@ app.get("/All-emp",async (req,res)=>{
    console.log(allperson)
 
    res.send(" hello bro all employee find successful .......!  ")
-   
+
 })
+
+
 
 
 
