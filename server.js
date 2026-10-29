@@ -10,6 +10,8 @@ const {connnect_to_database}=require('./config/db.js')
 
 const user=require('./model/userModel.js')
 
+const {employeeinfo}=require('./model/employeemodel.js')
+
 
 /* 
 
@@ -66,6 +68,32 @@ app.post('/createuser',async (req,res)=>{
 })
 
 app.use("/TCS_Emp",softwareRoutes)
+
+
+
+
+// employee create in the database 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.listen(3001, () => {
     console.log("server are start the this post number ");
 });
