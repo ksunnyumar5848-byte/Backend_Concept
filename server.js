@@ -105,10 +105,13 @@ app.get("/All-emp",async (req,res)=>{
 
    console.log(allperson)
 
-   res.send(" hello bro all employee find successful .......!  ")
+   res.send(allperson)
 
 })
 
+
+
+console.log("  mast mode hai sunny good backend knowladge  🫡🫡🫡🫠")
 
 
 
