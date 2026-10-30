@@ -4,6 +4,6 @@ const {personGet,personPost}=require('../controler/personControler')
 const route=express.Router()
 
 route.post('/male',personPost)
-route.post('/male',personGet)
+route.get('/male',personGet)
 
 module.exports=route

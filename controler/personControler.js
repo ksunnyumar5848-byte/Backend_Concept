@@ -1,13 +1,31 @@
+const person=require('../model/person_model')
 
 
 
-const personPost=(req,res)=>{
-   res.send("hello i send the i am the male url ")  
+const personPost= async (req,res)=>{
+
+   const formdata=req.body
+
+ const personCreate= await person.create({
+    name:formdata.name,
+    age:formdata.age,
+    height:formdata.height,
+    weight:formdata.weight,
+    password:formdata.password,
+    email:formdata.email
+   }
+)
+
+   res.send(personCreate)  
  
 }
 
-const personGet=(req,res)=>{
-    res.send("Hello i am send the person getmethods  ")
+const personGet= async (req,res)=>{
+        
+    const allMalepeson= await  person.find()
+
+    res.send(allMalepeson)
+
 }
 
 module.exports={personPost,personGet}

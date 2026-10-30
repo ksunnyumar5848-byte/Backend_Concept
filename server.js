@@ -129,18 +129,6 @@ console.log("  mast mode hai sunny good backend knowladge  🫡🫡🫡🫠")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(3001, () => {
     console.log("server are start the this post number ");
 });

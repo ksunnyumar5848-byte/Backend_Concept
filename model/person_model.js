@@ -12,3 +12,6 @@ personSchema=mongoose.Schema(
 )
 
 let person=mongoose.model("person",personSchema)
+
+
+module.exports=person
