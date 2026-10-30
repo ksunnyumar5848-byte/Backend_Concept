@@ -23,3 +23,13 @@ controler controler are the function and logic whare you write the function impl
 import the mongoose 
 
 connect to the database 
+
+
+------   today ajenda are rhe create the person molde and and store the person information
+
+    how to create the model model first are require the mongoose and seconds are the defind  the schema 
+
+------   then create the person post and connect the post with the person  
+
+
+

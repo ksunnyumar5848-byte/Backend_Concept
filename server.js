@@ -11,7 +11,8 @@ const {connnect_to_database}=require('./config/db.js')
 const user=require('./model/userModel.js')
 
 const employeeinfo=require('./model/employeemodel.js')
-
+const person=require('./model/person_model.js')
+const PersonRouterPage=require('./Routes/personRouter.js')
 
 /* 
 
@@ -108,6 +109,15 @@ app.get("/All-emp",async (req,res)=>{
    res.send(allperson)
 
 })
+
+
+
+// create the post methods  person  kai liye becasuse post methods forntend se data ko layega or 
+// yani form se data aayega fir data aanai kai baad  mongoose mai hepl se data base create kar dainge 
+
+
+
+app.use('/person',PersonRouterPage)
 
 
 
