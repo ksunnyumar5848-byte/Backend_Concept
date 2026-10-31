@@ -33,3 +33,18 @@ connect to the database
 
 
 
+  // const CreateBlogbro=await Blog.create({
+    //     content:formadata.content,
+    //     title:formadata.title
+    //  })
+
+
+
+what are the middle ware  middle ware are the function it check  surten rule and regulation 
+
+it if user are request then server before get the response middle ware it check some logic  middle ware is a interface between 
+
+request and reponse in simple word middle ware are function that cheack that check the logic 
+
+
+

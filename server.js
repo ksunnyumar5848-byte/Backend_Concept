@@ -14,6 +14,8 @@ const employeeinfo=require('./model/employeemodel.js')
 const person=require('./model/person_model.js')
 const PersonRouterPage=require('./Routes/personRouter.js')
 
+const bcrypt=require('bcrypt')
+
 const Blog=require('./model/Blog.js')
 
 /* 
@@ -82,8 +84,7 @@ app.use("/TCS_Emp",softwareRoutes)
 
 app.post("/emp_Create",async (req,res)=>{
 
-      const userformdata= req.body
-      
+      const userformdata= req.body 
     console.log(userformdata)
 
      await employeeinfo.create({
@@ -97,6 +98,8 @@ app.post("/emp_Create",async (req,res)=>{
      })
 
     res.send("emp create the successfully bro ... !  ")
+
+
 
 })
 
