@@ -159,7 +159,14 @@ function myMiddleware(req,res,next){
 
 }
 
-app.post('/Libary',myMiddleware,(req,res)=>{
+function AgeMiddleWare(req,res,next){
+    
+    console.log("ye mere age Valideter hai ye age ko check karega fir response dega ")
+
+    next()
+}
+
+app.post('/Libary',myMiddleware,AgeMiddleWare, (req,res)=>{
 
     const formdata=req.body
 
