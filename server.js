@@ -149,6 +149,45 @@ app.get('/allBlog',async (req,res)=>{
 
 
 
+function myMiddleware(req,res,next){
+      
+    
+  console.log("Acha mere ko id or payment id mil gaya hai ")
+
+   next()
+
+
+}
+
+app.post('/Libary',myMiddleware,(req,res)=>{
+
+    const formdata=req.body
+
+    res.json({
+        "message":"you are the this libary student "
+    })
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log("  mast mode hai sunny good backend knowladge  🫡🫡🫡🫠")
 
 app.listen(3001, () => {
