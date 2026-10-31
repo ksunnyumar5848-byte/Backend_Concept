@@ -14,6 +14,8 @@ const employeeinfo=require('./model/employeemodel.js')
 const person=require('./model/person_model.js')
 const PersonRouterPage=require('./Routes/personRouter.js')
 
+const Blog=require('./model/Blog.js')
+
 /* 
 
 const userRoutes=require('./Routes/best_user.js')
@@ -121,13 +123,33 @@ app.use('/person',PersonRouterPage)
 
 
 
+
+
+
+
+
+
+
+
+
+app.post('/createBlog',async (req,res)=>{
+      const formdata=req.body
+    console.log(formdata)
+    const CreateBlogbro=await Blog.create(formdata)
+     res.send(CreateBlogbro)
+})
+
+
+app.get('/allBlog',async (req,res)=>{
+
+    const all_Blog= await Blog.find()
+
+    res.send(all_Blog)
+})
+
+
+
 console.log("  mast mode hai sunny good backend knowladge  🫡🫡🫡🫠")
-
-
-
-
-
-
 
 app.listen(3001, () => {
     console.log("server are start the this post number ");
